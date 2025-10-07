@@ -1,0 +1,14 @@
+name: unpublished release workflow
+
+on:
+  release:
+    types:
+      - unpublished
+
+jobs:
+  print-value:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print value unpublished
+        run: echo "unpublished release"
+  
