@@ -1,0 +1,14 @@
+name: Prod release workflow
+
+on:
+  release:
+    types:
+      - released
+
+jobs:
+  print-value:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print value PROD
+        run: echo "PROD RELEASE"
+  
