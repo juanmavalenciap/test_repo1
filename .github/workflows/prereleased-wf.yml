@@ -1,0 +1,14 @@
+name: Prerelease release workflow
+
+on:
+  release:
+    types:
+      - prereleased
+
+jobs:
+  print-value:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print value prereleased
+        run: echo "prereleased release"
+  

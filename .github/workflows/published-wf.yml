@@ -3,7 +3,7 @@ name: Published release workflow
 on:
   release:
     types:
-      - created
+      - published
 
 jobs:
   print-value:
