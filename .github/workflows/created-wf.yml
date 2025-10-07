@@ -1,0 +1,14 @@
+name: Created release workflow
+
+on:
+  release:
+    types:
+      - created
+
+jobs:
+  print-value:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print value created
+        run: echo "created release"
+  
