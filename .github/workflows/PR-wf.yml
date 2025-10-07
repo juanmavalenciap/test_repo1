@@ -1,0 +1,17 @@
+name: PR workflow
+
+on:
+  pull_request:
+    types:
+      - opened
+  push:
+    branches:
+      - main
+
+jobs:
+  print-value:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print value non-prod envs
+        run: echo "THIS IS A NON-PROD ENV"
+  

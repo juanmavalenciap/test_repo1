@@ -1,0 +1,14 @@
+name: non-prod release workflow
+
+on:
+  release:
+    types:
+      - unpublished
+
+jobs:
+  print-value:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print value non-prod envs
+        run: echo "THIS IS A NON-PROD ENV"
+  
